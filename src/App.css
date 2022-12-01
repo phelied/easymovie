@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background-color: #f8f8ff;
   min-height: 100vh;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0 20px;
+  width: 100px;
+  padding: 0;
+  overflow: hidden;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  mix-blend-mode: color-burn;
+  height: 50px;
+}
+
+.app__wrapper {
+  margin: 0 auto;
+  max-width: 750px;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+.app_content__wrapper {
+  background-color: #ecedf6;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.app__video__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+iframe {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.projet_item__wrapper {
+  align-items: center;
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+
+.projet_item_details {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.projet_item_actions {
+  align-items: center;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.projet_item_actions {
+  background-color: #eee;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0.3rem;
+  transition: background-color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.projet_item_icon > img {
+  width: 20px;
+  height: 25px;
+}
+
+.projet_no_item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.submit__button {
+  width: 200px;
 }
